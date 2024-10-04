@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gowun Batang", serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px;
+    border-bottom: 3px solid #795e5d;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu li a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.sobre-a-loja {
+    margin-bottom: 56px;
+}
+
+.sobre-a-loja div {
+    padding-top: 30px;
+}
+
+.sobre-a-loja div p {
+    font-size: 20px;
+}
+
+.sobre-a-loja img {
+    max-height: 320px;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+section .container div {
+    padding: 0.3em 0 0 2em;
+}
+
+section h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #795e5d ;
+    color: #000;
+}
+
+section .container p {
+    padding: 40px 0 0 0;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-top: 56px;
+    align-items: center;
+}
+
+.promocoes {
+    padding: 0 10px 0;
+}
+
+.produto img {
+    width: 244px;
+    height: 271px;
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.produto h3,
+.produto p {
+    max-width: 100%;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.produto p {
+    display: inline;
+}
+
+.produto h3 {
+    font-size: 1.3em;
+}
+
+.promocao {
+    text-decoration:line-through lightcoral;
+    font-size: 14px;
+}
+
+.espaco-final {
+    height: 3em;
+}
+
+button {
+    color: #fff;
+    background-color: #795e5d;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 1em;
+    margin-bottom: 50px;
+    
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    body {
+        max-width: 100%;
+    }
+
+    header {
+        border-bottom: 3px solid #795e5d;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 12px;
+        padding-top: 16px;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .produtos {
+        display: block;
+        align-items: center;
+    }
+
+    .produto img  {
+        padding-left: 30px;
+    }
+
+    .produto h3 {
+        padding-left: 30px;
+    }
+
+    .produto p {
+        padding-left: 15px;
+    }
+
+    section .container {
+        display: block;
+        align-items: center;
+    }
+
+    .sobre-a-loja img { 
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .sobre-a-loja div p  {
+        width: 300px;
+        padding-right: 40px;
+    }
+
+    .sobre-a-loja h2 {
+        margin-right: 20px;
+        border: none;
+    }
+
+    .container div {
+        padding-top: 0px;
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: 10px 0 10px 0;
+        margin-bottom: 3em;
+    }
+
+    .sobre-a-loja {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header {
+        border-bottom: 3px solid #795e5d;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    section .container {
+        display: block;
+        align-items: center;
+    }
+
+    .sobre-a-loja img { 
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    section .container div {
+        padding: 2em 0 0 0;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49.5%);
+        padding-bottom: 2em;
+    }
+
+}
